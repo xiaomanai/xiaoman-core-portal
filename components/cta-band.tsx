@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, CalendarCheck2, Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site-config";
 
 export function CtaBand() {
   return (
@@ -27,13 +28,13 @@ export function CtaBand() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="mailto:hello@xiaoman.ai">
+              <Link href={`mailto:${siteConfig.contactEmail}`}>
                 联系咨询
                 <Mail className="h-4 w-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="ghost">
-              <Link href="mailto:demo@xiaoman.ai">
+              <Link href={`mailto:${siteConfig.demoEmail}`}>
                 预约演示
                 <CalendarCheck2 className="h-4 w-4" />
               </Link>

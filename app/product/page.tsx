@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, CheckCircle2, Layers3, Workflow } from "lucide-react";
 
-import { CtaBand } from "@/components/cta-band";
 import { SectionHeading } from "@/components/section-heading";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -55,7 +55,7 @@ export default function ProductPage() {
       "面向企业 AI 决策落地的产品层，连接业务输入、策略规则、模型能力和在线服务。",
     brand: {
       "@type": "Brand",
-      name: siteConfig.shortName,
+      name: siteConfig.brandName,
     },
     category: "AI Decision Engine",
     image: absoluteUrl(siteConfig.ogImage),
@@ -272,9 +272,9 @@ export default function ProductPage() {
             ))}
           </div>
         </section>
-
-        <CtaBand />
       </main>
+
+      <SiteFooter />
     </div>
   );
 }

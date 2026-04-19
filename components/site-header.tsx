@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 import { navItems } from "@/lib/site-content";
+import { siteConfig } from "@/lib/site-config";
 import { Button } from "@/components/ui/button";
 
 export function SiteHeader() {
@@ -20,10 +21,10 @@ export function SiteHeader() {
             />
           </div>
           <div>
-            <div className="text-sm font-semibold tracking-[0.16em] text-slate-900 uppercase">
-              Xiaoman AI
+            <div className="text-sm font-semibold tracking-[0.12em] text-slate-900">
+              {siteConfig.brandName}
             </div>
-            <div className="text-xs text-muted-foreground">Decision Engine Portal</div>
+            <div className="text-xs text-muted-foreground">{siteConfig.headerSubtitle}</div>
           </div>
         </Link>
 

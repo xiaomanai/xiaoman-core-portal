@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  applicationName: siteConfig.shortName,
+  applicationName: siteConfig.brandName,
   keywords: siteConfig.keywords,
   category: "technology",
   alternates: {

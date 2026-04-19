@@ -1,9 +1,9 @@
 export const navItems = [
   { label: "首页", href: "/" },
   { label: "产品说明", href: "/product" },
-  { label: "需求背景", href: "/#background" },
-  { label: "企业痛点", href: "/#pain-points" },
-  { label: "预约演示", href: "/#contact" },
+  { label: "核心能力", href: "/#capabilities" },
+  { label: "使用流程", href: "/#workflow" },
+  { label: "联系咨询", href: "/#contact" },
 ];
 
 export const heroMetrics = [

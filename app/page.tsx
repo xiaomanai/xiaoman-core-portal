@@ -7,10 +7,10 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import { CtaBand } from "@/components/cta-band";
 import { FeatureCard } from "@/components/feature-card";
 import { HeroOrbit } from "@/components/hero-orbit";
 import { SectionHeading } from "@/components/section-heading";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { WorkflowStep } from "@/components/workflow-step";
 import { Button } from "@/components/ui/button";
@@ -148,7 +148,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container-shell space-y-8">
+        <section id="capabilities" className="container-shell space-y-8">
           <SectionHeading
             eyebrow="Capabilities"
             title="围绕决策编排、模型接入、规则控制与在线服务组织产品能力"
@@ -217,9 +217,9 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-        <CtaBand />
       </main>
+
+      <SiteFooter />
     </div>
   );
 }
