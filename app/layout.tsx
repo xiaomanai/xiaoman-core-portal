@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.brandName,
+  icons: {
+    icon: [
+      { url: "/xiaoman-logo.png", type: "image/png" },
+      { url: "/xiaoman-logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/xiaoman-logo.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/xiaoman-logo.png", type: "image/png" }],
+    shortcut: ["/xiaoman-logo.png"],
+  },
   keywords: siteConfig.keywords,
   category: "technology",
   alternates: {
